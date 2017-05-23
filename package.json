@@ -1,0 +1,23 @@
+{
+  "name": "userflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --watch",
+    "start": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  },
+  "devDependencies": {
+    "buble-loader": "^0.4.1",
+    "html-webpack-plugin": "^2.28.0",
+    "modular-css-webpack": "^5.2.3",
+    "postcss-nested": "^2.0.2",
+    "webpack": "^2.6.0"
+  }
+}
