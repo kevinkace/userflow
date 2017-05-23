@@ -1,3 +1,4 @@
+/* src/palette.css */
 /* src/index.css */
 html,
 body {
@@ -6,7 +7,8 @@ body {
     padding: 0
 }
 body {
-    box-sizing: border-box
+    box-sizing: border-box;
+    background: 
 }
 *,
 *:before,
@@ -26,11 +28,19 @@ body {
 .mc70832d4a_screen:nth-child(2n) {
     top: 130vh
 }
-.mc70832d4a_layer {
+.mc70832d4a_screenFocused {
+    top: 0 !important;
+    transform: scale(2.5) translateY(30%)
+}
+.mc70832d4a_shutter {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.1)
+}
+.mc70832d4a_shutterOpen {
+    bottom: 90%;
+    left: 90%
 }

@@ -98,15 +98,21 @@ module.exports = {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mount", function() { return mount; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "screen", function() { return screen; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "layer", function() { return layer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "screenFocused", function() { return screenFocused; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "shutter", function() { return shutter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "shutterOpen", function() { return shutterOpen; });
 /* harmony default export */ __webpack_exports__["default"] = ({
     "mount": "mount",
     "screen": "mc70832d4a_screen",
-    "layer": "mc70832d4a_layer"
+    "screenFocused": "mc70832d4a_screen mc70832d4a_screenFocused",
+    "shutter": "mc70832d4a_shutter",
+    "shutterOpen": "mc70832d4a_shutter mc70832d4a_shutterOpen"
 });
 var mount = "mount";
 var screen = "mc70832d4a_screen";
-var layer = "mc70832d4a_layer";
+var screenFocused = "mc70832d4a_screen mc70832d4a_screenFocused";
+var shutter = "mc70832d4a_shutter";
+var shutterOpen = "mc70832d4a_shutter mc70832d4a_shutterOpen";
 
 /***/ }),
 /* 3 */
@@ -125,14 +131,14 @@ var screens = [
 
 m.mount(document.getElementById("mount"), {
     view : function () { return screens.map(function (screen, idx) { return m("div", {
-                    class : css.screen
+                    class : state.screen === idx ? css.screenFocused : css.screen
                 },
                 m("div", {
                     onclick : function () {
-                        state.screen = idx;
+                        state.screen = state.screen === idx ? false : idx;
                         console.log(state);
                     },
-                    class : css.layer
+                    class : state.screen === idx ? css.shutterOpen : css.shutter
                 }),
                 m(screen)
             ); }

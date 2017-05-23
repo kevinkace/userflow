@@ -12,14 +12,14 @@ m.mount(document.getElementById("mount"), {
     view : () =>
         screens.map((screen, idx) =>
             m("div", {
-                    class : css.screen
+                    class : state.screen === idx ? css.screenFocused : css.screen
                 },
                 m("div", {
                     onclick : () => {
-                        state.screen = idx;
+                        state.screen = state.screen === idx ? false : idx;
                         console.log(state);
                     },
-                    class : css.layer
+                    class : state.screen === idx ? css.shutterOpen : css.shutter
                 }),
                 m(screen)
             )
