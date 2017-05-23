@@ -92,27 +92,10 @@ module.exports = {
 
 /***/ }),
 /* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, __webpack_exports__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mount", function() { return mount; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "screen", function() { return screen; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "screenFocused", function() { return screenFocused; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "shutter", function() { return shutter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "shutterOpen", function() { return shutterOpen; });
-/* harmony default export */ __webpack_exports__["default"] = ({
-    "mount": "mount",
-    "screen": "mc70832d4a_screen",
-    "screenFocused": "mc70832d4a_screen mc70832d4a_screenFocused",
-    "shutter": "mc70832d4a_shutter",
-    "shutterOpen": "mc70832d4a_shutter mc70832d4a_shutterOpen"
-});
-var mount = "mount";
-var screen = "mc70832d4a_screen";
-var screenFocused = "mc70832d4a_screen mc70832d4a_screenFocused";
-var shutter = "mc70832d4a_shutter";
-var shutterOpen = "mc70832d4a_shutter mc70832d4a_shutterOpen";
+throw new Error("Module build failed: TypeError: after.after is not a function\n    at I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss-nested\\index.js:56:19\n    at Rule.each (I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss\\lib\\container.js:114:22)\n    at processRule (I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss-nested\\index.js:51:10)\n    at I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss-nested\\index.js:85:17\n    at Root.each (I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss\\lib\\container.js:114:22)\n    at process (I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss-nested\\index.js:83:14)\n    at LazyResult.run (I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss\\lib\\lazy-result.js:274:20)\n    at LazyResult.asyncTick (I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss\\lib\\lazy-result.js:189:32)\n    at processing.Promise.then._this2.processed (I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss\\lib\\lazy-result.js:228:20)\n    at LazyResult.async (I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss\\lib\\lazy-result.js:225:27)\n    at LazyResult.then (I:\\PROJECTS\\CODE\\userflow\\node_modules\\postcss\\lib\\lazy-result.js:131:21)\n    at Processor._walk (I:\\PROJECTS\\CODE\\userflow\\node_modules\\modular-css-core\\processor.js:287:10)\n    at Processor.string (I:\\PROJECTS\\CODE\\userflow\\node_modules\\modular-css-core\\processor.js:111:21)\n    at Object.module.exports (I:\\PROJECTS\\CODE\\userflow\\node_modules\\modular-css-webpack\\loader.js:21:22)");
 
 /***/ }),
 /* 3 */

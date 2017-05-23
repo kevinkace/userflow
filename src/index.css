@@ -10,7 +10,7 @@ body {
 body {
     box-sizing: border-box;
 
-    background:
+    background: colors.char;
 }
 
 *,
@@ -29,7 +29,14 @@ body {
     width: 100vw;
     margin: 0 auto;
 
-    border: solid 4px red;
+    border: solid 4px colors.fog;
+
+    transform: scale(1) translateY(0);
+    transition: transform 0.2s, top 0.2s;
+
+    &:hover {
+        border-color: colors.orange;
+    }
 }
 
 .screen:nth-child(2n) {
@@ -41,12 +48,19 @@ body {
 
     top: 0 !important;
     transform: scale(2.5) translateY(30%);
+
+    border: solid 1px colors.orange;
+
+    z-index: 2;
 }
 
 .shutter {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
+
     background-color: rgba(0, 0, 0, 0.1);
+
+    transition: bottom 0.2s, left 0.2s;
 }
 
 .shutterOpen {
